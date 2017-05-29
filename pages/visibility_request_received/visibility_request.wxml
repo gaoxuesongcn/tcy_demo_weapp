@@ -1,0 +1,11 @@
+<!--theme.wxml-->
+<view class="container">
+    <navigator class="card" url="../list/list?id={{item.Id}}"  wx:for="{{request_list}}">
+        <image src="{{item.thumbnail}}" class="card-image"></image>
+        <view class="card-content">
+            <view>
+                <text class="card-title">{{item.Message}}</text>
+            </view>
+        </view>
+    </navigator>
+</view>
